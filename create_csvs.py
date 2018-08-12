@@ -9,7 +9,7 @@ def main():
     fix_base_csv()
     process_csv_data()
 
-#TODO Add info to fix here
+#TODO Add info to fix here / DO NOT RUN ON ACTUAL FILE
 def fix_base_csv():
     base = pd.read_csv(base_csv)
     base['Course_Title'] = base['Course_Title'].str.replace(' & ', ' and ')
